@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7eb83de8f2ac4ef38825418d7d1fce26" Name="Diagram1">
+        <EntityTypeShape EntityType="AirportDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.ArrivalAirPort" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.Commander" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.DepartureAirPort" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.Flight" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.Passenger" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.Plane" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.Route" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirportDBModel.Ticket" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="AirportDBModel.FK_Route_ArrivalAirPort" ManuallyRouted="false" />
+        <AssociationConnector Association="AirportDBModel.FK_Plane_Commander" ManuallyRouted="false" />
+        <AssociationConnector Association="AirportDBModel.FK_Route_DepartureAirPort" ManuallyRouted="false" />
+        <AssociationConnector Association="AirportDBModel.FK_Flight_Plane" ManuallyRouted="false" />
+        <AssociationConnector Association="AirportDBModel.FK_Flight_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="AirportDBModel.FK_Ticket_Flight" ManuallyRouted="false" />
+        <AssociationConnector Association="AirportDBModel.FK_Ticket_Passenger" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
